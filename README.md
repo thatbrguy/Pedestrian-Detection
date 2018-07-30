@@ -2,8 +2,12 @@
 
 -- Work in progress --
 
-Pedestrian Detector using the TensorFlow Object Detection API and Nanonets. 
---gif--
+Pedestrian Detector using the TensorFlow Object Detection API and Nanonets.
+
+<p align="center">
+  <img src="/output.gif" alt="Pedestrian Detector in action"></img>
+</p>
+
 This repo provides complementary material to this [blog post](#target), which compares the performance of four object detectors for a pedestrian detection task. It also introduces a feature to use multiple GPUs in parallel for inference using the multiprocessing package. The count accuracy and FPS for different models (using 1,2,4 or 8 GPUs in parallel) were calculated and plotted.
 
 ## Dataset
