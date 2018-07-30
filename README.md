@@ -1,7 +1,5 @@
 # Pedestrian-Detector
 
--- Work in progress --
-
 Pedestrian Detector using the TensorFlow Object Detection API and Nanonets.
 
 <p align="center">
@@ -67,5 +65,10 @@ python ./code/prediction.py
 ```
 
 ## Results
+### FPS vs GPUs
+<p align="center">
+  <img src="/fps.jpg" alt="FPS vs GPUs"></img>
+</p>
 
-## Notes
+For more stats, refer to the [blog post](#target).
+The performance of each model (on the test set) was compiled into a video, which you can see [here](https://www.youtube.com/watch?v=0hWW6FVcFAo).
