@@ -1,6 +1,6 @@
 # Pedestrian-Detector
 
-Pedestrian Detector using the TensorFlow Object Detection API and Nanonets.
+Pedestrian Detector using the TensorFlow Object Detection API and Nanonets. [[Blog]](#target)[[Performance]](https://www.youtube.com/watch?v=0hWW6FVcFAo)
 
 <p align="center">
   <img src="/output.gif" alt="Pedestrian Detector in action"></img>
