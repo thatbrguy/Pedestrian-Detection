@@ -67,7 +67,7 @@ python ./code/prediction.py
 ## Results
 ### FPS vs GPUs
 <p align="center">
-  <img src="/fps.jpg" alt="FPS vs GPUs"></img>
+  <img src="/fps.png" alt="FPS vs GPUs"></img>
 </p>
 
 For more stats, refer to the [blog post](#target).
