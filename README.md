@@ -11,7 +11,7 @@ Pedestrian Detector using the TensorFlow Object Detection API and Nanonets.
 This repo provides complementary material to this [blog post](#target), which compares the performance of four object detectors for a pedestrian detection task. It also introduces a feature to use multiple GPUs in parallel for inference using the multiprocessing package. The count accuracy and FPS for different models (using 1,2,4 or 8 GPUs in parallel) were calculated and plotted.
 
 ## Dataset
-The [TownCentre](http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/project.html#datasets) dataset is used for training our pedestrian detector. You can use the following commands to download the dataset. This automatically extracts the frames and creates XML files from the csv groundtruth. The image dimensions are downscaled by a factor of 2 to reduce processing overhead.
+The [TownCentre](http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/project.html#datasets) dataset is used for training our pedestrian detector. You can use the following commands to download the dataset. This automatically extracts the frames from the video, and creates XML files from the csv groundtruth. The image dimensions are downscaled by a factor of 2 to reduce processing overhead.
 ```
 wget http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/Datasets/TownCentreXVID.avi
 wget http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/Datasets/TownCentre-groundtruth.top
