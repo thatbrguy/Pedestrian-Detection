@@ -1,12 +1,12 @@
 # Pedestrian-Detector
 
-Pedestrian Detector using the TensorFlow Object Detection API and Nanonets. [[Blog]](#target)[[Performance]](https://www.youtube.com/watch?v=0hWW6FVcFAo)
+Pedestrian Detector using the TensorFlow Object Detection API and Nanonets. [[Blog](https://medium.com/nanonets/how-to-automate-surveillance-easily-with-deep-learning-4eb4fa0cd68d)][[Performance](https://www.youtube.com/watch?v=0hWW6FVcFAo)]
 
 <p align="center">
   <img src="/output.gif" alt="Pedestrian Detector in action"></img>
 </p>
 
-This repo provides complementary material to this [blog post](#target), which compares the performance of four object detectors for a pedestrian detection task. It also introduces a feature to use multiple GPUs in parallel for inference using the multiprocessing package. The count accuracy and FPS for different models (using 1,2,4 or 8 GPUs in parallel) were calculated and plotted.
+This repo provides complementary material to this [blog post](https://medium.com/nanonets/how-to-automate-surveillance-easily-with-deep-learning-4eb4fa0cd68d), which compares the performance of four object detectors for a pedestrian detection task. It also introduces a feature to use multiple GPUs in parallel for inference using the multiprocessing package. The count accuracy and FPS for different models (using 1,2,4 or 8 GPUs in parallel) were calculated and plotted.
 
 ## Dataset
 The [TownCentre](http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/project.html#datasets) dataset is used for training our pedestrian detector. You can use the following commands to download the dataset. This automatically extracts the frames from the video, and creates XML files from the csv groundtruth. The image dimensions are downscaled by a factor of 2 to reduce processing overhead.
@@ -18,7 +18,7 @@ python extract_GT.py
 ```
 ## Setup
 ### 1. For TensorFlow Object Detection API
-Refer to the instructions in this [blog post](#target).
+Refer to the instructions in this [blog post](https://medium.com/nanonets/how-to-automate-surveillance-easily-with-deep-learning-4eb4fa0cd68d).
 
 ### 2. For Nanonets
 **Step 1: Clone the repo**
@@ -70,5 +70,5 @@ python ./code/prediction.py
   <img src="/fps.png" alt="FPS vs GPUs"></img>
 </p>
 
-For more stats, refer to the [blog post](#target).
+For more stats, refer to the [blog post](https://medium.com/nanonets/how-to-automate-surveillance-easily-with-deep-learning-4eb4fa0cd68d).
 The performance of each model (on the test set) was compiled into a video, which you can see [here](https://www.youtube.com/watch?v=0hWW6FVcFAo).
