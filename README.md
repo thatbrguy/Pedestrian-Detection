@@ -72,3 +72,5 @@ python ./code/prediction.py
 
 For more stats, refer to the [blog post](https://medium.com/nanonets/how-to-automate-surveillance-easily-with-deep-learning-4eb4fa0cd68d).
 The performance of each model (on the test set) was compiled into a video, which you can see [here](https://www.youtube.com/watch?v=0hWW6FVcFAo).
+
+>In light of GDPR and feeble accountability of Deep Learning, it is imperative that we ponder about the legality and ethical issues concerning automation of surveillance. This blog/code is for educational purposes only, and it used a publicly available dataset. It is your responsibility to make sure that your automated system complies with the law in your region.
