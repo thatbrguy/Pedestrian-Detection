@@ -45,7 +45,7 @@ def load_details(args):
     return TEST_IMAGE_PATHS, RESULT_IMAGE_PATHS, category_index
 
 
-def feed(queue):
+def feed(queue, args):
     
     """
     Queue that reads images from disk.
@@ -193,7 +193,7 @@ if __name__ == "__main__":
     for gpu_id in range(args.n_jobs):
         gpu_workers.append(Process(target=infer, args=(args, feed_queue, stitch_queue, completed, gpu_id)))
     stitch_cpu = Process(target=stitch, args=(stitch_queue, completed, args))
-    feed_cpu = Process(target=feed, args=(feed_queue,))
+    feed_cpu = Process(target=feed, args=(feed_queue, args))
 
     # Optional delay to give imread a head start
     feed_cpu.start()
